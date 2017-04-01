@@ -5,7 +5,7 @@
 @import "ribbon";
 
 body {
-  background-color: $white;
+  background-color: $background-white;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5rem;
   color: $black;
@@ -50,6 +50,7 @@ nav {
   color: $white;
   font-size: 2rem;
   font-family: monospace;
+  text-shadow: 1px 1px $black;
 }
 
 .hero__button {
@@ -59,6 +60,7 @@ nav {
   color: $white;
   margin-top: 0.5rem;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 main {
@@ -77,11 +79,14 @@ main {
   text-align: center;
   flex-basis: 30%;
   flex-grow: 1;
-  padding: 0 1em;
   margin-bottom: 2em;
 
   img {
     margin-bottom: 1rem;
+  }
+
+  p {
+    padding: 1rem;
   }
 }
 
@@ -91,16 +96,16 @@ main {
 }
 
 .section-heading {
-  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 25rem;
   text-align: center;
-  width: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   h1 {
-    padding-top: 10rem;
     color: $white;
     weight: bold;
     text-shadow: 1px 1px 1px black;
@@ -125,8 +130,13 @@ main {
 
 .section-text {
   text-align: center;
-  margin-top: 4rem;
-  padding: 0 1rem;
+  padding: 2rem 0.5rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
 }
 
 .section-text__title {

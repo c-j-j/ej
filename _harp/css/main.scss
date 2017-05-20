@@ -40,9 +40,15 @@ nav {
   background-repeat: no-repeat;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-size: cover;
+}
+
+.rsvp-text {
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 .hero__block{
@@ -51,7 +57,7 @@ nav {
 
 .hero__description {
   margin-top: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   color: $white;
   font-size: 2rem;
   font-family: monospace;
@@ -81,6 +87,7 @@ main {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -151,6 +158,16 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 10rem;
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,transparent,rgba(201, 201, 201, 0.75),transparent);
+  }
+
+  a {
+    color: $green;
+  }
 }
 
 .section-text__title {
